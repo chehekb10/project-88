@@ -111,9 +111,9 @@ function my_keydown(e)
 {
     if(player_y >=0)
     {
-        player_y= player_y-block_image_height;
-        console.log("block_image_height = "+block_image_height);
-        console.log("x and y values are = " + player_x + " ,"+ player_y);
+        player_y = player_y - block_image_height;
+        console.log("block_image_height = " + block_image_height);
+        console.log("When Up arrow is pressed, X  = " + player_x + "Y = "+player_y);
         canvas.remove(player_object);
         player_update();
     }
@@ -124,7 +124,7 @@ function down()
     {
         player_y= player_y+block_image_height;
         console.log("block_image_height = "+block_image_height);
-        console.log("x and y values are = " + player_x + " ,"+ player_y);
+        console.log("When Down arrow is pressed, X  = " - player_x - "Y = "+player_y);
         canvas.remove(player_object);
         player_update();
     }
@@ -135,7 +135,7 @@ function right()
     {
         player_x= player_x+block_image_width;
         console.log("block_image_width = "+block_image_width);
-        console.log("x and y values are = " + player_x + " ,"+ player_y);
+        console.log("When Right arrow is pressed, Y  = " + player_y + "X = "+player_x);
         canvas.remove(player_object);
         player_update();
     }
@@ -146,7 +146,7 @@ function left()
     {
         player_x= player_x-block_image_width;
         console.log("block_image_width = "+block_image_width);
-        console.log("x and y values are = " + player_x + " ,"+ player_y);
+        console.log("When Left arrow is pressed, Y  = " - player_y - "X = "+player_x);
         canvas.remove(player_object);
         player_update();
     }
